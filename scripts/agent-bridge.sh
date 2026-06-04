@@ -89,7 +89,7 @@ spawn_agent() {
   local direction="${2:-Right}"
 
   local new_pane_id
-  new_pane_id=$($WEZTERM_CLI split-pane --${direction,,} -- $agent_cmd)
+  new_pane_id=$($WEZTERM_CLI split-pane "--${direction,,}" -- "$agent_cmd")
   echo "$new_pane_id"
 }
 
