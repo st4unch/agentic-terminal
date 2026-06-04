@@ -26,7 +26,7 @@ config.window_padding = { left = 4, right = 4, top = 4, bottom = 4 }
 -- │  2. APPEARANCE                          │
 -- └─────────────────────────────────────────┘
 config.color_scheme = "Catppuccin Mocha"
-config.font = wezterm.font("JetBrains Mono", { weight = "Medium" })
+config.font = wezterm.font("JetBrainsMono Nerd Font", { weight = "Medium" })
 config.font_size = 13.0
 config.window_decorations = "RESIZE"
 config.inactive_pane_hsb = {
@@ -80,7 +80,7 @@ local AGENT_WORKSPACES = {
     label = "🛡️ SecOps",
     layout = {
       { title = "scanner", cmd = { os.getenv("SHELL") } },
-      { title = "logs",    cmd = { "tail", "-f", "/var/log/system.log" } },
+      { title = "logs",    cmd = { "tail", "-f", "/private/var/log/system.log" } },
       { title = "shell",   cmd = { os.getenv("SHELL") } },
     },
   },
